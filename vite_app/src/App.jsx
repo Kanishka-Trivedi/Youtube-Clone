@@ -147,8 +147,9 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [videos, setVideos] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('programming'); // Default search term
-  const API_KEY = 'AIzaSyABVARWHvvM2MBgqlm-BHehBeeBgQhIkTs';
+  const [searchQuery, setSearchQuery] = useState(''); // Default search term
+  // const API_KEY = 'AIzaSyABVARWHvvM2MBgqlm-BHehBeeBgQhIkTs';
+  const API_KEY = 'AIzaSyCmTcbBHvE3bLirycwGrIJt85p1XjvuVo8';
 
   useEffect(() => {
     const API_URL = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=12&q=${searchQuery}&key=${API_KEY}`;
