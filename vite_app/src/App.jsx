@@ -4,7 +4,7 @@ function App() {
 
   const [video, setVideo] = useState([]);
   useEffect(()=>{
-    fetch('http://localhost:5006/youtube')
+    fetch('https://youtube-clone-1eez.onrender.com/youtube')
       .then((response) => response.json())
       .then((data) => setVideo(data));
   }, []);
